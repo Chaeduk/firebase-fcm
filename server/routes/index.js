@@ -17,6 +17,9 @@ router.get("/", (req, res) => {
       body: "world",
     },
     token: devicetoken,
+    android: {
+      priority: "high",
+    },
   };
   admin
     .messaging()
